@@ -6,9 +6,9 @@ export const Data = createContext()
 function Context({children}) {
 
   const [news, setNews] = useState([]);
-  const [numb, setNumb] = useState([])
   
-  function fe(url,num=5){
+  
+  function fe(url){
     fetch(url)
     .then( (res)=> {
         return res.json();
@@ -19,7 +19,7 @@ function Context({children}) {
   }
 
   return (
-    <Data.Provider  value={{news, setNews,fe}}>
+    <Data.Provider  value={{news,fe}}>
         {children}
     </Data.Provider>
   )
