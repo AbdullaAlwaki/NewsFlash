@@ -19,7 +19,7 @@ function Home() {
           <div key={i}>
             <h3>{i+1}-{ n.title}</h3>
             <p>{n.author}</p>
-            <p>{showMore.includes(i) ?  n.content : `${n.content.substring(0,20)}...`}</p>
+            <p>{showMore.includes(i) ?  n.content : `${n.content.substring(0,20)}....`}</p>
             <img src={n.urlToImage} alt="" width={"250px"} />
             <button onClick={()=>{ 
               if(!showMore.includes(i)){
