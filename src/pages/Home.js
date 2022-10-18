@@ -6,10 +6,11 @@ function Home() {
   const {news,fe} = useContext(Data);
   useEffect(()=>{
     fe("https://saurav.tech/NewsAPI/top-headlines/category/entertainment/us.json")
-  })
+    
+  },[])
   return (
     <div className="App">
-      {news.map((n, i) => {
+      {news.slice(0,5).map((n, i) => {
         return (
           <div key={i}>
             <h3>{n.title}</h3>
