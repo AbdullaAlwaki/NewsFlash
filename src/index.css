@@ -69,3 +69,27 @@ code {
 }
 
 .logo {text-align: center;}
+
+.footer {
+  background-color: #ff8906;
+  display: flex;
+  align-items: center;
+}
+
+.footer ul {
+  display: flex;
+ 
+}
+
+.footer ul li {
+  list-style-type: none;
+  margin-left: 100px;
+ 
+}
+
+.footer img {
+  height: 50px; 
+  margin: .5em;
+  /* padding: 1em; */
+  /* border: 1px solid #000; */
+}
