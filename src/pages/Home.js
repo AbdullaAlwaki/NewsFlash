@@ -35,7 +35,85 @@ function Home() {
         );
       })}
       <button onClick={()=> setNumb(numb+5)}>Show more</button>
-      
+      <h4 className="section-header">Sport</h4>
+      <section>
+        
+        
+        {sport.slice(0,3).map(i => {
+          return <div className="section-boxes">
+            <img src={i.urlToImage} alt="" />
+            <h2>{i.title}</h2>
+            <p>{i.content}</p>
+          </div>
+          
+        }
+        )}
+        
+      </section>
+
+      <h4 className="section-header">Business</h4>
+      <section>
+        
+        
+        {business.slice(0,3).map(i => {
+          return <div className="section-boxes">
+            <img src={i.urlToImage} alt="" />
+            <h2>{i.title}</h2>
+            <p>{i.content}</p>
+          </div>
+          
+        }
+        )}
+        
+      </section>
+
+      <h4 className="section-header">Entertainment</h4>
+      <section>
+        
+        
+        {entertainment.slice(0,3).map(i => {
+          return <div className="section-boxes">
+            <img src={i.urlToImage} alt="" />
+            <h2>{i.title}</h2>
+            <p>{i.content}</p>
+          </div>
+          
+        }
+        )}
+        
+      </section>
+
+      <h4 className="section-header">Science</h4>
+      <section>
+        
+        
+        {science.slice(0,3).map(i => {
+          return <div className="section-boxes">
+            <img src={i.urlToImage} alt="" />
+            <h2>{i.title}</h2>
+            <p>{i.content}</p>
+          </div>
+          
+        }
+        )}
+        
+      </section>
+
+      <h4 className="section-header">Tech</h4>
+      <section>
+        
+        
+        {tech.slice(0,3).map(i => {
+          return <div className="section-boxes">
+            <img src={i.urlToImage} alt="" />
+            <h2>{i.title}</h2>
+            <p>{i.content}</p>
+          </div>
+          
+        }
+        )}
+        
+      </section>
     </div>
   );
 }
