@@ -11,35 +11,24 @@ import Business from "./Business";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 function Navbarr() {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="/">News Flash</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/About">About</Nav.Link>
-              <Nav.Link href="/Entertainment">Entertainment</Nav.Link>
-              <Nav.Link href="/Sport">Sport</Nav.Link>
-              <Nav.Link href="/Science">Science</Nav.Link>
-              <Nav.Link href="/Tech">Tech</Nav.Link>
-              <Nav.Link href="/Health">Health</Nav.Link>
-              <Nav.Link href="/Business">Business</Nav.Link>
-            </Nav>
-            <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                Dank memes
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-      
+      <nav>
+        
+              <Link to="/">Home</Link>
+              <Link to="/About">About</Link>
+              <Link to="/Entertainment">Entertainment</Link>
+              <Link to="/Sport">Sport</Link>
+              <Link to="/Science">Science</Link>
+              <Link to="/Tech">Tech</Link>
+              <Link to="/Health">Health</Link>
+              <Link to="/Business">Business</Link>
+            
+      </nav>
+      <div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
@@ -50,7 +39,7 @@ function Navbarr() {
           <Route path="/Health" element={<Health />} />
           <Route path="/Business" element={<Business />} />
         </Routes>
-      
+      </div>
     </>
   );
 }

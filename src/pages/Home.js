@@ -4,11 +4,7 @@ import { Data } from "../component/Context";
 
 
 function Home() {
-  const {news,fe,btnRef,showMore,setShowMore,sport} = useContext(Data);
-  useEffect(()=>{
-    fe("https://saurav.tech/NewsAPI/everything/cnn.json")
-
-    },[])
+  const {news,btnRef,showMore,setShowMore,sport} = useContext(Data);
   return (
     <div className="App">
       {news.slice(0,3).map((n, i) => {
