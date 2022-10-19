@@ -35,6 +35,7 @@ function Home() {
         );
       })}
       <button onClick={()=> setNumb(numb+5)}>Show more</button>
+      
     </div>
   );
 }
