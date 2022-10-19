@@ -11,15 +11,18 @@ import Business from "./Business"
 
 function Navbar() {
   return (
-    <div>
-    <Link to="/">Home</Link>
-    <Link to="/About">About</Link>
-    <Link to="/Politics">Politics</Link>
-    <Link to="/Sport">Sport</Link>
-    <Link to="/Music">Music</Link>
-    <Link to="/Tech">Tech</Link>
-    <Link to="/Health">Health</Link>
-    <Link to="/Business">Business</Link>
+    
+    <div >
+      <nav className='navi'>
+    <Link to="/" className='nav-link'>Home</Link>
+    <Link to="/About" className='nav-link'>About</Link>
+    <Link to="/Politics" className='nav-link'>Politics</Link>
+    <Link to="/Sport" className='nav-link'>Sport</Link>
+    <Link to="/Music" className='nav-link'>Music</Link>
+    <Link to="/Tech" className='nav-link'>Tech</Link>
+    <Link to="/Health" className='nav-link'>Health</Link>
+    <Link to="/Business" className='nav-link'>Business</Link>
+    </nav>
     <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/About" element={<About/>}/>

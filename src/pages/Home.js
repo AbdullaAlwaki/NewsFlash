@@ -1,6 +1,9 @@
 import React from "react";
 import { useContext,useEffect } from "react";
 import { Data } from "../component/Context";
+import Header from "../component/Header";
+import Ticker from "../component/Ticker";
+// import './TickStyle.css'
 
 function Home() {
   const {news,fe} = useContext(Data);
@@ -9,18 +12,32 @@ function Home() {
     
   },[])
   return (
+<>
+    <Header />
+    <Ticker />
+    
+    
     <div className="App">
-      {news.slice(0,5).map((n, i) => {
+    <div className="container" style={{flex:1, flexWrap:'wrap'}}>
+      {news.slice(0,12).map((n, i) => {
         return (
           <div key={i}>
+            <div  className="card">
             <h3>{n.title}</h3>
-            <p>{n.author}</p>
-            <p>{n.content}</p>
-            <img src={n.urlToImage} alt="" width={"250px"} />
+            <p className="author">{n.author}</p>
+            <p className="content">{n.content}</p>
+            <img src={n.urlToImage} alt="" className="card-pic" />
           </div>
+          </div>
+        
         );
       })}
     </div>
+    </div>
+
+    
+    </>      
+  
   );
 }
 
