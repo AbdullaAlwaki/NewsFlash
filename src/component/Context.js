@@ -1,11 +1,11 @@
 import React from 'react';
-import {useState,useEffect,createContext} from 'react'
+import {useState,createContext} from 'react'
 
 export const Data = createContext()
 
 function Context({children}) {
 
-    const [news, setNews] = useState([]);
+  const [news, setNews] = useState([]);
   
   
   function fe(url){
@@ -17,8 +17,9 @@ function Context({children}) {
         setNews(data.articles);
     });
   }
+
   return (
-    <Data.Provider  value={{news, setNews,fe}}>
+    <Data.Provider  value={{news,fe}}>
         {children}
     </Data.Provider>
   )

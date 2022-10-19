@@ -2,11 +2,11 @@ import React from "react";
 import { useContext,useEffect,useState } from "react";
 import { Data } from "../component/Context";
 
-function Health() {
+function Science() {
     const [numb, setNumb] = useState(12)
   const {news,fe} = useContext(Data);
   useEffect(()=>{
-    fe("https://saurav.tech/NewsAPI/top-headlines/category/health/us.json")
+    fe("https://saurav.tech/NewsAPI/top-headlines/category/science/us.json")
     
   },[])
   return (
@@ -25,5 +25,4 @@ function Health() {
     </div>
   );
 }
-
-export default Health
+export default Science
