@@ -1,19 +1,14 @@
 import React from "react";
-import { useContext, useEffect, useState } from "react";
+import { useContext} from "react";
 import { Data } from "../component/Context";
 
 function Entertainment() {
-  const { news, fe, setShowMore, showMore, btnRef, numb, setNumb } =
+  const { entertainment, setShowMore, showMore, btnRef, numb, setNumb } =
     useContext(Data);
 
-  useEffect(() => {
-    fe(
-      "https://saurav.tech/NewsAPI/top-headlines/category/entertainment/us.json"
-    );
-  }, []);
   return (
     <div className="App">
-      {news.slice(0, numb).map((n, i) => {
+      {entertainment.slice(0, numb).map((n, i) => {
         return (
           <div key={i}>
             <h3>

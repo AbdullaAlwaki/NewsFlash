@@ -1,17 +1,13 @@
 import React from "react";
-import { useContext,useEffect,useState } from "react";
+import { useContext } from "react";
 import { Data } from "../component/Context";
 
 function Science() {
-    const [numb, setNumb] = useState(12)
-  const {news,fe,setShowMore,showMore,btnRef} = useContext(Data);
-  useEffect(()=>{
-    fe("https://saurav.tech/NewsAPI/top-headlines/category/science/us.json")
-    
-  },[])
+  const {science,numb, setNumb,setShowMore,showMore,btnRef} = useContext(Data);
+  
   return (
     <div className="App">
-      {news.slice(0, numb).map((n, i) => {
+      {science.slice(0, numb).map((n, i) => {
         return (
           <div key={i}>
             <h3>
