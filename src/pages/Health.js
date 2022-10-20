@@ -14,7 +14,7 @@ useEffect(()=> {
             <h3>{n.title}</h3>
             <p>{n.author}</p>
             <p>{n.content}</p>
-            <img src={n.urlToImage} alt="" width={"250px"} />
+            <img src={n.urlToImage} alt=""  />
           </div>
         );
       })}

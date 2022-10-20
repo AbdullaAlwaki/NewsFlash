@@ -1,8 +1,8 @@
-# Getting Started with Create React App
+# Introducing the world to NewsFlash Media. A News Source you can trust to keep yo speedily informed.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+
+## Team: Nigel Nix. Denis McArdle. Abdulla Alwaki.
 
 In the project directory, you can run:
 
