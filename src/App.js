@@ -9,6 +9,7 @@ function App() {
       <Navbarr/>
       <Footer/>
      </Context>
+     
   );
 }
 

@@ -1,13 +1,15 @@
 import React from "react";
+import styled from "styled-components";
 import Styled from "styled-components";
 
 const Footerr = Styled.footer`
 padding: 80px 60px;
 background: radial-gradient(circle, rgba(54, 54, 54,1) 0%, rgba(100, 100,100,1) 100%);
-@media (max-width: 1000px) {
-  padding: 70px 30px;
+@media (max-width: 900px) {
+  padding: 30px 0;
 }
 `;
+
 
 const Wrapper = Styled.div`
   display: flex;
@@ -25,12 +27,17 @@ justify-content: space-between;
 align-items: center;
 margin-left: 60px;
 `;
-
+const Columnn = Styled(Column)`
+@media (max-width: 900px) {
+    display: none;
+}
+`
  const Row = Styled.div`
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
 grid-gap: 20px;
-@media (max-width: 1000px) {
+padding-right: 60px;
+@media (max-width: 900px) {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 `;
@@ -51,6 +58,7 @@ font-size: 24px;
 color: rgb(150, 150, 150);
 margin-bottom: 20px;
 font-weight: bold;
+
 `;
 
 
@@ -67,30 +75,35 @@ function Footer() {
               <Title>About </Title>
                   <Link href="#">Story</Link>
               </Column>
-              <Column>
+              <Columnn>
               <Title>Entertainment</Title>
                   <Link href="#">Story</Link>
-              </Column>
-              <Column>
+              </Columnn>
+              <Columnn>
               <Title>Sport</Title>
                   <Link href="#">Story</Link>
-              </Column>
-              <Column>
+              </Columnn>
+              <Columnn>
               <Title>Science</Title>
                   <Link href="#">Story</Link>
-              </Column>
-              <Column>
+              </Columnn>
+              <Columnn>
               <Title>Tech</Title>
                   <Link href="#">Story</Link>
-              </Column>
+              </Columnn>
               
             
-              <Column>
+              <Columnn>
               <Title>Health</Title>
                   <Link href="#">United States</Link>
-              </Column>
+              </Columnn>
               <Column>
+              <Columnn>
               <Title>Business</Title>
+                  <Link href="#">United States</Link>
+              </Columnn>
+              <Column></Column>
+              <Title>Social Media</Title>
                   <Link href="#">Facebook</Link>
                   <Link href="#">Instagram</Link>
                   <Link href="#">Youtube</Link>
