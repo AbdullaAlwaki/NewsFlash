@@ -8,16 +8,12 @@ import Science from "./Science";
 import Tech from "./Tech";
 import Health from "./Health";
 import Business from "./Business";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+
 
 function Navbarr() {
   return (
     <>
       <nav>
-        
               <Link to="/">Home</Link>
               <Link to="/About">About</Link>
               <Link to="/Entertainment">Entertainment</Link>
@@ -28,7 +24,7 @@ function Navbarr() {
               <Link to="/Business">Business</Link>
             
       </nav>
-      <div>
+      <div className="main">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
