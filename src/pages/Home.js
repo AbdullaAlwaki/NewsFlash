@@ -4,7 +4,7 @@ import { Data } from "../component/Context";
 
 
 function Home() {
-  const {news,btnRef,showMore,setShowMore,sport} = useContext(Data);
+  const {news,btnRef,showMore,setShowMore,sport,business,entertainment,science,tech,health} = useContext(Data);
   return (
     <div className="App">
       {news.slice(0,3).map((n, i) => {
@@ -106,6 +106,22 @@ function Home() {
         
         
         {tech.slice(0,3).map(i => {
+          return <div className="section-boxes">
+            <img src={i.urlToImage} alt="" />
+            <h2>{i.title}</h2>
+            <p>{i.content}</p>
+          </div>
+          
+        }
+        )}
+        
+      </section>
+
+      <h4 className="section-header">Health</h4>
+      <section>
+        
+        
+        {health.slice(0,3).map(i => {
           return <div className="section-boxes">
             <img src={i.urlToImage} alt="" />
             <h2>{i.title}</h2>
