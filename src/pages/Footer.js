@@ -3,7 +3,7 @@ import Styled from "styled-components";
 
 const Footerr = Styled.footer`
 padding: 80px 60px;
-background: radial-gradient(circle, rgba(92,39,251,1) 0%, rgba(112,71,247,1) 100%);
+background: radial-gradient(circle, rgba(54, 54, 54,1) 0%, rgba(100, 100,100,1) 100%);
 @media (max-width: 1000px) {
   padding: 70px 30px;
 }
@@ -21,7 +21,8 @@ const Wrapper = Styled.div`
  const Column = Styled.div`
 display: flex;
 flex-direction: column;
-text-align: left;
+justify-content: space-between;
+align-items: center;
 margin-left: 60px;
 `;
 
@@ -35,20 +36,20 @@ grid-gap: 20px;
 `;
 
  const Link = Styled.a`
-color: #fff;
-margin-bottom: 20px;
+color: rgb(202, 202, 202);
+margin-bottom: 0;
 font-size: 18px;
 text-decoration: none;
 &:hover {
-    color: #ff9c00;
+    color: rgb(216, 216, 216);
     transition: 200ms ease-in;
 }
 `;
 
  const Title = Styled.p`
 font-size: 24px;
-color: #fff;
-margin-bottom: 40px;
+color: rgb(150, 150, 150);
+margin-bottom: 20px;
 font-weight: bold;
 `;
 
