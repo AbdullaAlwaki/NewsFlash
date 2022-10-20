@@ -3,6 +3,9 @@ import { useContext,useEffect } from "react";
 import { Data } from "../component/Context";
 import Header from "../component/Header";
 import Ticker from "../component/Ticker";
+import Footer from "../component/Footer";
+import Feature from "../component/Feature";
+import Articles from "../component/Articles";
 // import './TickStyle.css'
 
 function Home() {
@@ -15,25 +18,33 @@ function Home() {
 <>
     <Header />
     <Ticker />
+
+    <div className="feature-box">
+    <Feature />
+    <Articles />
+    </div>
     
+    <Footer />
     
-    <div className="App">
+    {/* <div className="App">
     <div className="container" style={{flex:1, flexWrap:'wrap'}}>
-      {news.slice(0,12).map((n, i) => {
+      {news.slice(0,4).map((n, i) => {
         return (
           <div key={i}>
-            <div  className="card">
+            <div style={{
+          backgroundImage: `url(${n.urlToImage})`
+        }} className="card">
             <h3>{n.title}</h3>
             <p className="author">{n.author}</p>
             <p className="content">{n.content}</p>
-            <img src={n.urlToImage} alt="" className="card-pic" />
-          </div>
+            {/* <img src={n.urlToImage} alt="" className="card-pic" /> */}
+          {/* </div>
           </div>
         
         );
       })}
     </div>
-    </div>
+    </div> */} */}
 
     
     </>      

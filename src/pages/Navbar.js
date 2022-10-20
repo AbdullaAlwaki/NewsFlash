@@ -13,6 +13,11 @@ function Navbar() {
   return (
     
     <div >
+      <header>
+      <input type="checkbox" id="check-btn"></input>
+    <label for="check-btn">
+        <span class="icon"></span>  
+    </label>
       <nav className='navi'>
     <Link to="/" className='nav-link'>Home</Link>
     <Link to="/About" className='nav-link'>About</Link>
@@ -23,6 +28,7 @@ function Navbar() {
     <Link to="/Health" className='nav-link'>Health</Link>
     <Link to="/Business" className='nav-link'>Business</Link>
     </nav>
+    </header>
     <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/About" element={<About/>}/>

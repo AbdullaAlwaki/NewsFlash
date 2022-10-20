@@ -6,33 +6,115 @@
 
 body {
   
-  background-color: rgb(197, 228, 238);
+  background-color: rgb(5, 4, 27);
   margin: 0;
   width: 100vw;
  
+}
+
+.feature-box {
+  display: flex;
+  color: white;
 }
 
 
 
 /* navbar styling */
 
-.navi { 
-  background-color: rgb(48, 38, 38);
+/*mobile first*/
+header { 
+  display: block;
+}
+
+header nav { 
+  display:none
+}
+
+header nav a {
+  color: white;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+.nav-link{
+  display: block;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.nav-link:hover {
+  background-color: lightblue;
+}
+
+/* hide and show nav bar in mobile dev */
+header input[type=checkbox]
+{  display:none }
+
+header span.icon{
+  display: block;
+  padding: 0.7rem;
+  font-family: "Font Awesome 6 Free"; 
+  font-weight: 900;
+  color: azure;
+}
+
+header span.icon::before {
+  content: '\f0c9';
+  font-size: 4rem;
+  color: azure;
+ 
+  
+}
+
+#check-btn:checked ~ nav{
+  display:block;
+}
+
+#check-btn:checked ~ label span::after {
+  content: '\f00d';
   font-size: 2rem;
-  display: flex;
-  justify-content: space-evenly;
- }
+  
+}
+
+#check-btn:checked ~ label span::before {
+  display: none;
+}
+
 
  .nav-link {
   color: white;
   box-shadow: 10px 5px 5px blue;
   text-decoration: none;
   /* border-left: 3px solid blue; */
-  border-right: 3px solid blue;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  border-right: 3px solid whitesmoke;
+  padding-left: 2rem;
+  padding-right: 2rem;
   border-radius: 1rem;
+  display: block;
+  background-color: rgb(13, 13, 157);
+  
+  font-size: 1.3rem;
+  text-align: center;
  }
+
+ @media only screen and (min-width: 700px) {
+
+
+  header nav { 
+      display: block;
+     
+  }
+      .nav-link{
+          display: inline-block;
+         
+      }
+      #check-btn, header label{
+          display: none;
+      }
+  }
+
+  /* end of navbar code  */
 
  .container {
   display: flex;
