@@ -10,18 +10,6 @@ function Tech() {
       {technology.slice(0, numb).map((n, i) => {
         return (
           <div key={i}>
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <img src={n.urlToImage} alt="" width={"250px"} />
-            <h3>{n.title}</h3>
-            
-=======
-            <h3>{i+1}-{ n.title}</h3>
->>>>>>> main
-            <p>{n.author}</p>
-            <p>{n.content}</p>
-            
-=======
             <h3>
               {i + 1}-{n.title}
             </h3>
@@ -44,7 +32,6 @@ function Tech() {
             >
               {showMore.includes(i) ? "show less" : "show more"}
             </button>
->>>>>>> main
           </div>
         );
       })}
