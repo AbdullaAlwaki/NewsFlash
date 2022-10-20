@@ -3,10 +3,11 @@ import { useContext } from "react";
 import { Data } from "../component/Context";
 
 function Science() {
-  const {science,numb, setNumb,setShowMore,showMore,btnRef} = useContext(Data);
+  const {science,numb, setNumb,setShowMore,showMore,spin,btnRef} = useContext(Data);
   
   return (
     <div className="App">
+      {spin ? <p className="load">Loading...</p>: ""}
       {science.slice(0, numb).map((n, i) => {
         return (
           <div key={i}>
@@ -19,7 +20,7 @@ function Science() {
                 ? n.content
                 : `${n.content !== null && n.content.substring(0, 20)}...`}
             </p>
-            <img src={n.urlToImage} alt="" width={"250px"} />
+            {n.urlToImage == null ? <p>sorry no img here because we have free Api 🥲</p>: <img src={n.urlToImage} alt="" width={"250px"} />}
             <button
               onClick={() => {
                 if (!showMore.includes(i)) {

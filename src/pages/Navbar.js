@@ -12,18 +12,19 @@ import Business from "./Business";
 
 function Navbar() {
   return (
-    <>
-      <nav>
-        
-              <Link to="/">Home</Link>
-              <Link to="/About">About</Link>
-              <Link to="/Entertainment">Entertainment</Link>
-              <Link to="/Sport">Sport</Link>
-              <Link to="/Science">Science</Link>
-              <Link to="/Tech">Tech</Link>
-              <Link to="/Health">Health</Link>
-              <Link to="/Business">Business</Link>
-            
+    <div>
+      <nav >
+        <ul className="nav">
+              <input type={"checkbox"}/>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/About">About</Link></li>
+              <li><Link to="/Entertainment">Entertainment</Link></li>
+              <li><Link to="/Sport">Sport</Link></li>
+              <li><Link to="/Science">Science</Link></li>
+              <li><Link to="/Tech">Tech</Link></li>
+              <li><Link to="/Health">Health</Link></li>
+              <li><Link to="/Business">Business</Link></li>
+              </ul>
       </nav>
       <div>
         <Routes>
@@ -37,7 +38,8 @@ function Navbar() {
           <Route path="/Business" element={<Business />} />
         </Routes>
       </div>
-    </>
+      
+    </div>
   );
 }
 

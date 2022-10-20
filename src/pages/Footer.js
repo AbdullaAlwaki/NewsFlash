@@ -1,9 +1,9 @@
 import React from "react";
-import styled from "styled-components";
 import Styled from "styled-components";
 
 const Footerr = Styled.footer`
-padding: 80px 60px;
+padding: 50px 0;
+text-align : center;
 background: radial-gradient(circle, rgba(54, 54, 54,1) 0%, rgba(100, 100,100,1) 100%);
 @media (max-width: 900px) {
   padding: 30px 0;
@@ -15,7 +15,7 @@ const Wrapper = Styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   /* background: red; */
 `
@@ -97,12 +97,12 @@ function Footer() {
               <Title>Health</Title>
                   <Link href="#">United States</Link>
               </Columnn>
-              <Column>
               <Columnn>
               <Title>Business</Title>
                   <Link href="#">United States</Link>
               </Columnn>
-              <Column></Column>
+              <Column>
+              
               <Title>Social Media</Title>
                   <Link href="#">Facebook</Link>
                   <Link href="#">Instagram</Link>

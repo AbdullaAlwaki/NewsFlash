@@ -1,12 +1,12 @@
 import React from "react";
 import Context from "./component/Context";
-import Navbarr from "./pages/Navbarr";
+import Navbar from "./pages/Navbar";
 import Footer from "./pages/Footer";
 
 
 function App() {
   return (<Context>
-      <Navbarr/>
+      <Navbar/>
       <Footer/>
      </Context>
      

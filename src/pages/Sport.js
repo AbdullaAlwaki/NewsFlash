@@ -3,11 +3,12 @@ import { useContext} from "react";
 import { Data } from "../component/Context";
 
 function Sport() {
-  const {sport,setShowMore,showMore,btnRef,numb, setNumb} = useContext(Data);
+  const {sport,setShowMore,showMore,btnRef,numb,spin ,setNumb} = useContext(Data);
 
   
   return (
     <div className="App">
+      {spin ? <p className="load">Loading...</p>: ""}
       {sport.slice(0, numb).map((n, i) => {
         return (
           <div key={i}>
@@ -20,7 +21,7 @@ function Sport() {
                 ? n.content
                 : `${n.content !== null && n.content.substring(0, 20)}...`}
             </p>
-            <img src={n.urlToImage} alt="" width={"250px"} />
+            {n.urlToImage == null ? <p>sorry no img here because we have free Api 🥲</p>: <img src={n.urlToImage} alt="" width={"250px"} />}
             <button
               onClick={() => {
                 if (!showMore.includes(i)) {
