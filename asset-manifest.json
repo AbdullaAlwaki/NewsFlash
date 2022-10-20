@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/NewsFlash/static/css/main.04105fa7.css",
-    "main.js": "/NewsFlash/static/js/main.c1ec4759.js",
+    "main.css": "/NewsFlash/static/css/main.6e9de9de.css",
+    "main.js": "/NewsFlash/static/js/main.c2408fc9.js",
     "static/media/nigel-avatar.JPEG": "/NewsFlash/static/media/nigel-avatar.60214eb39923f1c7fce6.JPEG",
     "static/media/den-avatar.JPEG": "/NewsFlash/static/media/den-avatar.c31a73d838d497bb708a.JPEG",
     "static/media/alwaki-avatar.JPEG": "/NewsFlash/static/media/alwaki-avatar.b8eb1f835a830f970e30.JPEG",
@@ -10,11 +10,11 @@
     "static/media/truth-power.jpeg": "/NewsFlash/static/media/truth-power.86d27919a8f49f71dcdf.jpeg",
     "static/media/obama.jpeg": "/NewsFlash/static/media/obama.d49a57883ddaeb5fe877.jpeg",
     "index.html": "/NewsFlash/index.html",
-    "main.04105fa7.css.map": "/NewsFlash/static/css/main.04105fa7.css.map",
-    "main.c1ec4759.js.map": "/NewsFlash/static/js/main.c1ec4759.js.map"
+    "main.6e9de9de.css.map": "/NewsFlash/static/css/main.6e9de9de.css.map",
+    "main.c2408fc9.js.map": "/NewsFlash/static/js/main.c2408fc9.js.map"
   },
   "entrypoints": [
-    "static/css/main.04105fa7.css",
-    "static/js/main.c1ec4759.js"
+    "static/css/main.6e9de9de.css",
+    "static/js/main.c2408fc9.js"
   ]
 }
